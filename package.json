@@ -1,15 +1,15 @@
 {
-  "name": "teilenbackend",
+  "name": "TeilenBackend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "App.js",
   "scripts": {
-    "start": "node dist/src/index.js",
+    "start": "node dist/index.js",
     "build": "rimraf dist && tsc -p tsconfig.json",
-    "dev": "nodemon",
+    "dev": "nodemon dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Lucas Costa Gobbi",
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.9",
@@ -20,6 +20,7 @@
   "dependencies": {
     "@types/ws": "^7.4.0",
     "express": "^4.15.2",
+    "rimraf": "^3.0.2",
     "websocket-json-stream": "0.0.3",
     "ws": "^7.4.4"
   }
