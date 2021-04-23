@@ -6,6 +6,7 @@ export class Client {
     public socket: WebSocket
     constructor(id: number, socket: WebSocket){
         this.id = id
+        // teste
         this.socket = socket
         // this.socket.send('Client Created')
     }
